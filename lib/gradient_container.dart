@@ -4,9 +4,9 @@ import "package:f4_5/styled_text.dart";
 const startAlignment = Alignment.topCenter;
 const endAlignment = Alignment.bottomCenter;
 class GradientContainer extends StatelessWidget{
-    final color color1;
-    final color color2;
-    final color color3;
+    final Color color1;
+    final Color color2;
+    final Color color3;
     const GradientContainer(
         this.color1,
         this.color2,
@@ -14,6 +14,7 @@ class GradientContainer extends StatelessWidget{
         super.key,
         }
     );
+    void rollDice(){}
     @override
     Widget build(BuildContext context) {
         return Container(
@@ -28,17 +29,26 @@ class GradientContainer extends StatelessWidget{
             end: endAlignment,
         ),
       ),
+        
         child: Center(
-            child: Image.asset(
-                "assets/images/dice-1.png",
-                width: 300,
+            child: Column(
+                children: [
+                    Image.asset(
+                        "assets/images/dice-1.png",
+                        width: 300,
+                    ),
+                    TextButton(
+                        onPressed: rollDice,
+                        child: Text("Roll Dice!"),
 
+                    ),
+                ],
             ),
-            
-      ),
+        ),
     );
 
   }
 
   
 }
+
