@@ -16,7 +16,7 @@ class GradientContainer extends StatelessWidget{
         }
     );
     
-    }
+    
     @override
     Widget build(BuildContext context) {
         return Container(
@@ -37,8 +37,9 @@ class GradientContainer extends StatelessWidget{
         ),
     );
 
-  }
+  
 
   
+ }
 }
 
