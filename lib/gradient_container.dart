@@ -29,13 +29,12 @@ class GradientContainer extends StatelessWidget{
         ),
       ),
         child: Center(
-            child: StyledText(
-            "Hello world!",
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: 32,
-          ),
-        ),
+            child: Image.asset(
+                "assets/images/dice-1.png",
+                width: 300,
+
+            ),
+            
       ),
     );
 
